@@ -1,0 +1,16 @@
+@startuml
+
+left to right direction
+
+
+actor "ユーザ" as user
+
+rectangle "システム" {
+    usecase "契約プランを購入する" as purchase
+    usecase "契約プランの料金を確認する" as diagnostic
+    user --- purchase
+    user --- diagnostic
+
+}
+
+@enduml
